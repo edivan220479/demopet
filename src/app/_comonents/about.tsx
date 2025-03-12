@@ -12,7 +12,7 @@ export function About() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-        <div className="relative"data-aos="fade-up-left"
+        <div className="relative" data-aos="fade-up-left"
           data-aos-delay="100">
           <div className="relative w-full h-[400px] rounded-3xl overflow-hidden">
             <Image
