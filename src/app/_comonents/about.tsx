@@ -12,7 +12,8 @@ export function About() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-        <div className="relative">
+        <div className="relative"data-aos="fade-up-left"
+          data-aos-delay="100">
           <div className="relative w-full h-[400px] rounded-3xl overflow-hidden">
             <Image
               src={about1Img}
@@ -63,13 +64,21 @@ export function About() {
           </ul>
 
           <div className="flex gap-2">
-          <a href="#"
+          <a
+          data-aos="fade-up-left"
+          data-aos-delay="100"
+           href={'https://wa.me/5571988139379?text=olá vim do site e gosotaria de mais informações'}
+              target="_blank"
           className="bg-[#E84C3D] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
           >
             <WhatsappLogo className="w-5 h-5 text-white"/>
             Contato via WhatsApp
           </a>
-          <a href="#"
+          <a 
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          href="https://www.google.com.br/maps/place/Salvador+Shopping/@-12.978345,-38.4598068,17z/data=!3m1!4b1!4m6!3m5!1s0x71616510cac211f:0xd5a41097a534a48b!8m2!3d-12.9783503!4d-38.4551934!16s%2Fg%2F121gpt80?entry=ttu&g_ep=EgoyMDI1MDMxMC4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
           className="flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
           >
             <MapPin className="w-5 h-5 text-black"/>
