@@ -4,7 +4,7 @@ import primier from "../../../public/primier.png";
 import whiskas from "../../../public/whiskas.png";
 import natural from "../../../public/natural.png";
 import Image from "next/image";
-import { FacebookLogo, InstagramLogo, XLogo, YoutubeLogo } from "@phosphor-icons/react/dist/ssr";
+import { FacebookLogo, InstagramLogo, YoutubeLogo } from "@phosphor-icons/react/dist/ssr";
 
 const brands = [
   { name: "Royal Canin", logo: royal },
