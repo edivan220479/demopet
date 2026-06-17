@@ -1,7 +1,6 @@
-/// <reference types="next" />
+
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-// @ts-ignore: CSS module import for global styles (no type declarations)
 import "./globals.css";
 import AosInit from "./_comonents/aos-init";
 
