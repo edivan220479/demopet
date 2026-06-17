@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="bg-[#E84C3D] text-white relative overflow-hidden">
+    <section className="bg-[#E84C3D] text-white relative overflow-hidden min-h-[500px] md:min-h-[560px]">
       <div>
         <Image
           src={dogImg}
@@ -18,8 +18,8 @@ export function Hero() {
         <div className="absolute inset-0 bg-black opacity-40"></div>
       </div>
 
-      <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
-        <article className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative z-10">
+        <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10 "
             data-aos="fade-down"
@@ -63,7 +63,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="hidden md:block h-full relative">
+          <div className="hidden lg:block relative" style={{minHeight: '480px'}}>
             <Image
               src={dogImg}
               alt="foto do Dog"

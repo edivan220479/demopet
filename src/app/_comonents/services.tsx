@@ -64,7 +64,7 @@ export function Services() {
           <div className='overflow-hidden' ref={emblaRef}>
             <div className='flex'>
               {services.map((item, index) => (
-                <div key={index} className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3">
+                <div key={index} className="flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] md:flex-[0_0_calc(100%/3)] px-3">
                   <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
                     <div className='flex-1 flex items-start justify-between'>
 
@@ -104,14 +104,14 @@ export function Services() {
           </div>
 
           <button
-            className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute left-3 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10'
+            className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute left-0 -translate-y-1/2 top-1/2 z-10'
             onClick={scrollPrev}
           >
             <ChevronLeft className='w-6 h-6 text-gray-600' />
           </button>
 
           <button
-            className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute -right-6 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10'
+            className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute right-0 -translate-y-1/2 top-1/2 z-10'
             onClick={scrollNext}
           >
             <ChevronRight className='w-6 h-6 text-gray-600' />

@@ -51,7 +51,7 @@ export function Testimonials() {
 
         <h2 className="text-4xl font-bold text-center mb-12">Depoimentos dos nossos clientes</h2>
 
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-4xl mx-auto px-10">
 
           <div className='overflow-hidden' ref={emblaRef}>
             <div className='flex'>
@@ -84,14 +84,14 @@ export function Testimonials() {
           </div>
 
           <button
-            className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute left-3 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10'
+            className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute left-0 -translate-y-1/2 top-1/2 z-10'
             onClick={scrollPrev}
           >
             <ChevronLeft className='w-6 h-6 text-gray-600' />
           </button>
 
           <button
-            className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute -right-6 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10'
+            className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute right-0 -translate-y-1/2 top-1/2 z-10'
             onClick={scrollNext}
           >
             <ChevronRight className='w-6 h-6 text-gray-600' />

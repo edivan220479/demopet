@@ -1,5 +1,5 @@
 /// <reference types="next" />
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 // @ts-ignore: CSS module import for global styles (no type declarations)
 import "./globals.css";
@@ -17,6 +17,12 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata: Metadata = {
   title: "DemoPet - Seu Pet Merece o Melhor",
   description: "Plataforma completa para cuidados e bem-estar do seu animal de estimação",
@@ -27,7 +33,6 @@ export const metadata: Metadata = {
     description: "Plataforma completa para cuidados e bem-estar do seu animal de estimação",
     type: "website",
   },
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
 };
 
 export default function RootLayout({
